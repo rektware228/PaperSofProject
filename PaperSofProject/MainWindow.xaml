@@ -1,0 +1,21 @@
+﻿<Window x:Class="PaperSofProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PaperSofProject"
+        mc:Ignorable="d"
+        Title="Лопушок" MinHeight="750" MinWidth="1200" MaxHeight="950" MaxWidth="1400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" Orientation="Horizontal" >
+            <Image Source="/Image/Лопушок.png" Width="30"></Image>
+            <TextBlock Margin="10 0 0 0" FontSize="32" HorizontalAlignment="Center" FontFamily="Gabriola"><Run Text="Л"/><Run Language="ru-ru" Text="о"/><Run Text="пушок"/></TextBlock>
+        </StackPanel>
+        <Frame NavigationUIVisibility="Hidden" x:Name="myframe" Grid.Row="1"></Frame>
+    </Grid>
+</Window>

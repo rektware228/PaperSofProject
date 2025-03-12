@@ -1,0 +1,28 @@
+﻿<Application x:Class="PaperSofProject.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PaperSofProject"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="DataGrid">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF0AAC98" Offset="1"/>
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FF6DCDC1" Offset="0.936"/>
+                        <GradientStop Color="White"/>
+                        <GradientStop Color="#FFD4F0ED" Offset="0.483"/>
+                    </RadialGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="RowBackground" Value="#FFFFFF"/>
+            <Setter Property="AlternatingRowBackground" Value="#CEFFF9"/>
+            <Setter Property="BorderBrush" Value="#CCCCCC"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="FontFamily" Value="Gabriola"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+    </Application.Resources>
+</Application>
